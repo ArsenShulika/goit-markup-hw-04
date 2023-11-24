@@ -397,22 +397,18 @@ img {
 }
 
 .portfolio-list-item {
+  position: relative;
   width: calc((100% - 48px) / 3);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
-.portfolio-list-item:hover {
+.portfolio-list-item:hover .overlay {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.card-blue {
-  position: relative;
-  overflow: hidden;
-}
-
-.text-card-blue {
+.overlay {
   position: absolute;
   top: 0;
   font-size: 16px;
@@ -423,9 +419,8 @@ img {
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
-
-  transform: translateY(0%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  transform: translateY(100%);
 }
 
 .portfolio-container {
@@ -536,7 +531,8 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-footer {
