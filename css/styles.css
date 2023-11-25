@@ -355,20 +355,8 @@ img {
 
 .social-links-container {
   display: flex;
-  column-gap: 24px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 90px;
-  background-color: #4d5ae5;
-  fill: #f4f4fd;
   width: 40px;
   height: 40px;
-}
-
-.social-links-container:hover,
-.social-links-container:focus {
-  background-color: #404bbf;
-  cursor: pointer;
 }
 
 .social-link {
